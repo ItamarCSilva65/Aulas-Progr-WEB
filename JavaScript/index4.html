@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+
+<html class="light" lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Contato - Cursos de Gestão</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#137fec",
+            "background-light": "#f6f7f8",
+            "background-dark": "#101922",
+            "text-light-primary": "#101922",
+            "text-dark-primary": "#f6f7f8",
+            "text-light-secondary": "#576472",
+            "text-dark-secondary": "#a0b0c2",
+            "border-light": "#e3e8ee",
+            "border-dark": "#2a3b4d",
+          },
+          fontFamily: {
+            "display": ["Lexend", "sans-serif"]
+          },
+          borderRadius: {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+        },
+      },
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      font-size: 24px;
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-text-light-primary dark:text-text-dark-primary">
+<div class="relative flex min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<!-- Top App Bar -->
+<header class="flex items-center bg-background-light dark:bg-background-dark p-4 pb-2 justify-between sticky top-0 z-10 border-b border-border-light dark:border-border-dark">
+<div class="flex size-12 shrink-0 items-center justify-start">
+<span class="material-symbols-outlined text-text-light-primary dark:text-text-dark-primary">arrow_back</span>
+</div>
+<h1 class="text-lg font-bold flex-1 text-center">Contato</h1>
+<div class="flex size-12 shrink-0 items-center"></div>
+</header>
+<main class="flex-1 px-4 py-6 sm:px-6 lg:px-8">
+<div class="mx-auto max-w-2xl">
+<!-- Headline -->
+<h2 class="text-text-light-primary dark:text-text-dark-primary tracking-tight text-[32px] font-bold leading-tight text-left pb-2">Fale Conosco</h2>
+<!-- Body Text -->
+<p class="text-text-light-secondary dark:text-text-dark-secondary text-base font-normal leading-normal pb-8">Estamos aqui para ajudar. Envie sua dúvida ou entre em contato pelos nossos canais.</p>
+<!-- Form Section -->
+<section class="space-y-6">
+<h3 class="text-xl font-semibold text-text-light-primary dark:text-text-dark-primary">Envie-nos uma mensagem</h3>
+<form class="space-y-5">
+<div>
+<label class="block text-sm font-medium text-text-light-secondary dark:text-text-dark-secondary mb-1.5" for="name">Nome</label>
+<input class="w-full rounded-lg border-border-light dark:border-border-dark bg-background-light dark:bg-background-dark focus:border-primary focus:ring-primary placeholder:text-text-light-secondary/70 dark:placeholder:text-text-dark-secondary/70" id="name" name="name" placeholder="Seu nome completo" type="text"/>
+</div>
+<div>
+<label class="block text-sm font-medium text-text-light-secondary dark:text-text-dark-secondary mb-1.5" for="email">E-mail</label>
+<input class="w-full rounded-lg border-border-light dark:border-border-dark bg-background-light dark:bg-background-dark focus:border-primary focus:ring-primary placeholder:text-text-light-secondary/70 dark:placeholder:text-text-dark-secondary/70" id="email" name="email" placeholder="seuemail@exemplo.com" type="email"/>
+</div>
+<div>
+<label class="block text-sm font-medium text-text-light-secondary dark:text-text-dark-secondary mb-1.5" for="subject">Assunto</label>
+<select class="w-full rounded-lg border-border-light dark:border-border-dark bg-background-light dark:bg-background-dark focus:border-primary focus:ring-primary" id="subject" name="subject">
+<option>Dúvida sobre curso</option>
+<option>Suporte técnico</option>
+<option>Comercial</option>
+<option>Outro</option>
+</select>
+</div>
+<div>
+<label class="block text-sm font-medium text-text-light-secondary dark:text-text-dark-secondary mb-1.5" for="message">Sua mensagem</label>
+<textarea class="w-full rounded-lg border-border-light dark:border-border-dark bg-background-light dark:bg-background-dark focus:border-primary focus:ring-primary placeholder:text-text-light-secondary/70 dark:placeholder:text-text-dark-secondary/70" id="message" name="message" placeholder="Digite sua mensagem aqui..." rows="5"></textarea>
+</div>
+<button class="w-full rounded-lg bg-primary py-3 px-4 text-base font-semibold text-white transition-opacity hover:opacity-90 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 dark:focus:ring-offset-background-dark" type="submit">
+              Enviar Mensagem
+            </button>
+</form>
+</section>
+<div class="my-10 h-px w-full bg-border-light dark:bg-border-dark"></div>
+<!-- Alternative Contact Section -->
+<section class="space-y-4">
+<h3 class="text-xl font-semibold text-text-light-primary dark:text-text-dark-primary">Outras formas de contato</h3>
+<div class="space-y-2">
+<!-- Phone -->
+<a class="flex items-center gap-4 bg-background-light dark:bg-background-dark px-4 min-h-14 justify-between rounded-lg border border-transparent hover:bg-primary/10 dark:hover:bg-primary/20 transition-colors" href="tel:+5511999998888">
+<div class="flex items-center gap-4">
+<div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-primary/20 text-primary">
+<span class="material-symbols-outlined">call</span>
+</div>
+<p class="text-base font-normal leading-normal">(11) 99999-8888</p>
+</div>
+<div class="shrink-0 flex items-center justify-center">
+<div class="flex h-7 w-7 items-center justify-center">
+<div class="h-3 w-3 rounded-full bg-[#078838]"></div>
+</div>
+</div>
+</a>
+<!-- Email -->
+<a class="flex items-center gap-4 bg-background-light dark:bg-background-dark px-4 min-h-14 justify-between rounded-lg border border-transparent hover:bg-primary/10 dark:hover:bg-primary/20 transition-colors" href="mailto:contato@sistemasdegestao.com">
+<div class="flex items-center gap-4">
+<div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-primary/20 text-primary">
+<span class="material-symbols-outlined">mail</span>
+</div>
+<p class="text-base font-normal leading-normal flex-1 truncate">contato@sistemasdegestao.com</p>
+</div>
+<div class="shrink-0">
+<div class="flex h-7 w-7 items-center justify-center text-text-light-secondary dark:text-text-dark-secondary">
+<span class="material-symbols-outlined">arrow_forward_ios</span>
+</div>
+</div>
+</a>
+<!-- Address -->
+<a class="flex items-center gap-4 bg-background-light dark:bg-background-dark px-4 min-h-14 justify-between rounded-lg border border-transparent hover:bg-primary/10 dark:hover:bg-primary/20 transition-colors" href="#">
+<div class="flex items-center gap-4">
+<div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-primary/20 text-primary">
+<span class="material-symbols-outlined">location_on</span>
+</div>
+<p class="text-base font-normal leading-normal flex-1 truncate">Av. Paulista, 1000 - São Paulo, SP</p>
+</div>
+<div class="shrink-0">
+<div class="flex h-7 w-7 items-center justify-center text-text-light-secondary dark:text-text-dark-secondary">
+<span class="material-symbols-outlined">arrow_forward_ios</span>
+</div>
+</div>
+</a>
+</div>
+</section>
+<div class="h-10"></div>
+</div>
+</main>
+</div>
+</body></html>

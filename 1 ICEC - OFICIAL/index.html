@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ICEC - Educação Corporativa</title>
+    <!-- Importação do Font Awesome para ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- Link para o arquivo CSS externo -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Cabeçalho com logo e menu de navegação -->
+    <header class="header">
+        <!-- Primeira linha: logo e botão Fale Conosco -->
+        <div class="header-top">
+            <div class="logo">
+                <img src="img/Icec.png" alt="ICEC" class="logo-img">
+            </div>
+            <a href="#contato" class="cta-button01">Fale conosco</a>
+        </div>
+        
+        <!-- Segunda linha: menu de navegação -->
+        <nav class="menu">
+            <a href="#sobre">Sobre nós</a>
+            <a href="#servicos">Serviços</a>
+            <a href="#numeros">Números</a>
+            <a href="#depoimentos">Depoimentos</a>
+            <!-- Ícone do carrinho adicionado -->
+            <a href="#carrinho" class="cart-icon">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="cart-count">0</span>
+            </a>
+             <!-- Idiomas -->
+            <div>
+            <select>
+                <option>Idioma</option>
+                <option>Português</option>
+                <option>Inglês</option>
+                <option>Espanhol</option>
+                <option>Francês</option>
+            </select>
+            </div>
+        </nav>
+
+        
+    </header>
+
+    <!-- Seção principal com banner e chamada para ação -->
+    <section class="banner">
+        <div class="content">
+            <h1 class="main-title">ICEC</h1>
+            <h2 class="titulo-content">Itamar Correia Educação Corporativa</h2>          
+            <div class="description">
+                <h4>Bem-vindo(a) ao ICEC!</h4>
+                <p>Ficamos felizes com o seu acesso. Isto significa que você ouviu falar bem de nós e está interessado nos nossos serviços. Conheça nossos cursos. Temos o compromisso de fornecer conteúdo atualizado e com a qualidade que você precisa!</p>
+            </div>
+            <a href="#servicos" class="cta-button">Conhecer Cursos</a>
+        </div>
+    </section>
+
+    <!-- Seção de serviços oferecidos -->
+    <section id="servicos" class="services-section">
+        <div class="services-container">
+            <h2 class="section-title">Nossos Serviços</h2>
+            <p class="section-description">Oferecemos soluções completas em educação corporativa para impulsionar sua carreira e sua empresa.</p>
+        </div>
+
+        <div class="services-cards-wrapper">
+            <!-- Card de curso gratuito -->
+            <div class="service-card">
+                <div class="icon-wrapper">
+                    <i class="fas fa-graduation-cap"></i>
+                </div>
+                <h3>Cursos Gratuitos</h3>
+                <p>Cadastre-se, realize nossos cursos e receba o Certificado.</p>
+            </div>
+
+            <!-- Card de cursos pagos -->
+            <div class="service-card">
+                <div class="icon-wrapper">
+                    <i class="fas fa-book-open"></i>
+                </div>
+                <h3>Cursos Premium</h3>
+                <p>Qualifique-se! Adquira nossos cursos com preços competitivos e se destaque no mercado.</p>
+            </div>
+
+            <!-- Card de cursos in company -->
+            <div class="service-card">
+                <div class="icon-wrapper">
+                    <i class="fas fa-building"></i>
+                </div>
+                <h3>Cursos In Company</h3>
+                <p>Presenteie sua organização com nossos cursos. Pessoal altamente qualificado.</p>
+            </div>
+
+            <!-- Card de consultoria -->
+            <div class="service-card">
+                <div class="icon-wrapper">
+                    <i class="fas fa-users"></i>
+                </div>
+                <h3>Consultoria</h3>
+                <p>Implemente um Sistema de Gestão na sua organização e saia na frente dos seus concorrentes.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de estatísticas da empresa -->
+    <section id="numeros" class="stats-section">
+        <div class="stats-container">
+            <div class="stat-item">
+                <div class="stat-number">+150</div>
+                <p class="stat-description">Cursos Disponíveis</p>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">+5</div>
+                <p class="stat-description">Anos de Experiência</p>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">+300</div>
+                <p class="stat-description">Clientes Satisfeitos</p>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">98%</div>
+                <p class="stat-description">Taxa de Aprovação</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de depoimentos de clientes -->
+    <section id="depoimentos" class="testimonials-section">
+        <div class="container">
+            <h2 class="testimonials-section-title">Depoimentos</h2>
+            <p class="testimonials-section-subtitle">Veja o que nossos alunos e clientes dizem sobre nossos serviços.</p>
+
+            <div class="carousel-container">
+                <div class="testimonial-cards-wrapper">
+                    <!-- Depoimento 1 -->
+                    <div class="testimonial-card">
+                        <div class="card-header">
+                            <img src="img/Pessoa 1.png" alt="Foto de Maria" class="avatar">
+                            <div class="user-details">
+                                <h3 class="user-name">Maria</h3>
+                                <p class="user-handle">Gerente de Projetos</p>
+                            </div>
+                            <div class="stars">
+                                <span class="star filled">★</span>
+                                <span class="star filled">★</span>
+                                <span class="star filled">★</span>
+                                <span class="star filled">★</span>
+                                <span class="star filled">★</span>
+                            </div>
+                        </div>
+                        <p class="testimonial-text">
+                            Os cursos do ICEC transformaram minha carreira. O conteúdo é atualizado e os instrutores são altamente qualificados. Recomendo para todos os profissionais que buscam crescimento.
+                        </p>
+                    </div>
+
+                    <!-- Depoimento 2 -->
+                    <div class="testimonial-card">
+                        <div class="card-header">
+                            <img src="img/Pessoa 2.png" alt="Foto de Carlos" class="avatar">
+                            <div class="user-details">
+                                <h3 class="user-name">Carlos</h3>
+                                <p class="user-handle">Diretor de RH</p>
+                            </div>
+                            <div class="stars">
+                                <span class="star filled">★</span>
+                                <span class="star filled">★</span>
+                                <span class="star filled">★</span>
+                                <span class="star filled">★</span>
+                                <span class="star filled">★</span>
+                            </div>
+                        </div>
+                        <p class="testimonial-text">
+                            Contratamos os cursos in company para nossa equipe e os resultados foram impressionantes. A produtividade aumentou significativamente após o treinamento.
+                        </p>
+                    </div>
+
+                    <!-- Depoimento 3 -->
+                    <div class="testimonial-card">
+                        <div class="card-header">
+                            <img src="img/Pessoa 3.png" alt="Foto de João" class="avatar">
+                            <div class="user-details">
+                                <h3 class="user-name">João</h3>
+                                <p class="user-handle">Analista de Sistemas</p>
+                            </div>
+                            <div class="stars">
+                                <span class="star filled">★</span>
+                                <span class="star filled">★</span>
+                                <span class="star filled">★</span>
+                                <span class="star filled">★</span>
+                                <span class="star filled">★</span>
+                            </div>
+                        </div>
+                        <p class="testimonial-text">
+                            A consultoria do ICEC nos ajudou a implementar um sistema de gestão que otimizou nossos processos. Profissionais extremamente competentes.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Indicadores do carrossel -->
+            <div class="carousel-pagination">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé com informações de contato -->
+    <footer id="contato" class="footer">
+        <div class="footer-container">
+            <!-- Coluna da marca -->
+            <div class="footer-column brand-column">
+                <h3 class="footer-logo">ICEC</h3>
+                <p class="footer-description">Educação Corporativa de Excelência</p>
+                <div class="social-icons">
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="social-icon"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+
+            <!-- Coluna de links rápidos -->
+            <div class="footer-column links-column">
+                <h4 class="footer-heading">Navegação</h4>
+                <ul class="footer-links">
+                    <li><a href="#sobre">Sobre Nós</a></li>
+                    <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="#numeros">Nossos Números</a></li>
+                    <li><a href="#depoimentos">Depoimentos</a></li>
+                </ul>
+            </div>
+
+            <!-- Coluna de informações de contato -->
+            <div class="footer-column contact-column">
+                <h4 class="footer-heading">Contato</h4>
+                <ul class="footer-contact">
+                    <li><i class="fas fa-clock"></i> Segunda a Sexta (8h - 17h)</li>
+                    <li><i class="fas fa-clock"></i> Sábados (9h - 14h)</li>
+                    <li><i class="fas fa-envelope"></i> contato@icec.com</li>
+                    <li><i class="fas fa-phone"></i> (84) 98144-0678</li>
+                </ul>
+            </div>
+
+            <!-- Coluna de newsletter -->
+            <div class="footer-column newsletter-column">
+                <h4 class="footer-heading">Newsletter</h4>
+                <p class="newsletter-description">Cadastre-se para receber novidades e ofertas exclusivas.</p>
+                <form action="#" class="newsletter-form">
+                    <input type="email" placeholder="Digite seu email" required>
+                    <button type="submit"><i class="fas fa-arrow-right"></i></button>
+                </form>
+            </div>
+        </div>
+        
+        <!-- Direitos autorais -->
+        <div class="footer-bottom">
+            <p>&copy; 2023 ICEC - Itamar Correia Educação Corporativa. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>

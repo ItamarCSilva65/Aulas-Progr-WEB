@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulação de Array (Sem DOM)</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f2f5;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            background-color: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            max-width: 400px;
+            width: 90%;
+        }
+
+        h1 {
+            color: #333;
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        p {
+            color: #666;
+            font-size: 0.9rem;
+            margin-bottom: 20px;
+        }
+
+        .btn-group {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        button {
+            padding: 12px;
+            font-size: 1rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            font-weight: bold;
+        }
+
+        /* Cores específicas para cada tipo de ação */
+        .btn-add {
+            background-color: #4CAF50; /* Verde */
+            color: white;
+        }
+        .btn-add:hover { background-color: #45a049; }
+
+        .btn-remove {
+            background-color: #f44336; /* Vermelho */
+            color: white;
+        }
+        .btn-remove:hover { background-color: #da190b; }
+
+        .btn-view {
+            background-color: #2196F3; /* Azul */
+            color: white;
+        }
+        .btn-view:hover { background-color: #0b7dda; }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Gerenciador de Array</h1>
+        <p>Use os botões abaixo para interagir via alertas.</p>
+        
+        <div class="btn-group">
+            <!-- Botões chamando as funções JS -->
+            <button class="btn-add" onclick="adicionarFinal()">Adicionar ao Final (push)</button>
+            <button class="btn-add" onclick="adicionarInicio()">Adicionar ao Início (unshift)</button>
+            
+            <button class="btn-remove" onclick="removerFinal()">Remover do Final (pop)</button>
+            <button class="btn-remove" onclick="removerInicio()">Remover do Início (shift)</button>
+            
+            <button class="btn-view" onclick="mostrarTodos()">Mostrar Array Atual</button>
+        </div>
+    </div>
+
+    <script>
+        // 1. Criar um array vazio para armazenar os itens
+        let meuArray = [];
+
+        // Função auxiliar para mostrar o estado atual do array formatado
+        function mostrarEstadoAtual() {
+            if (meuArray.length === 0) {
+                alert("O array está vazio agora: []");
+            } else {
+                // Exibe os itens separados por vírgula e espaço
+                alert("Estado atual do array:\n[" + meuArray.join(", ") + "]");
+            }
+        }
+
+        // 2. Adicionar item no final do array (usando push())
+        function adicionarFinal() {
+            let item = prompt("Digite o item para adicionar ao FINAL:");
+            
+            // Verifica se o usuário digitou algo (e não clicou em cancelar)
+            if (item !== null && item.trim() !== "") {
+                meuArray.push(item);
+                alert(`Item "${item}" adicionado ao final!`);
+                mostrarEstadoAtual();
+            } else {
+                alert("Nenhum item digitado.");
+            }
+        }
+
+        // 3. Adicionar item no início do array (usando unshift())
+        function adicionarInicio() {
+            let item = prompt("Digite o item para adicionar ao INÍCIO:");
+            
+            if (item !== null && item.trim() !== "") {
+                meuArray.unshift(item);
+                alert(`Item "${item}" adicionado ao início!`);
+                mostrarEstadoAtual();
+            } else {
+                alert("Nenhum item digitado.");
+            }
+        }
+
+        // 4. Remover o último item (usando pop())
+        function removerFinal() {
+            if (meuArray.length === 0) {
+                alert("Erro: O array já está vazio. Nada para remover.");
+            } else {
+                let removido = meuArray.pop();
+                alert(`O item "${removido}" foi removido do final.`);
+                mostrarEstadoAtual();
+            }
+        }
+
+        // 5. Remover o primeiro item (usando shift())
+        function removerInicio() {
+            if (meuArray.length === 0) {
+                alert("Erro: O array já está vazio. Nada para remover.");
+            } else {
+                let removido = meuArray.shift();
+                alert(`O item "${removido}" foi removido do início.`);
+                mostrarEstadoAtual();
+            }
+        }
+
+        // 6. Mostrar todos os itens atuais do array
+        function mostrarTodos() {
+            mostrarEstadoAtual();
+        }
+    </script>
+</body>
+</html>

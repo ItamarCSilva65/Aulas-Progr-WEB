@@ -1,0 +1,7 @@
+<script>
+    let preco = 1850;
+    let proc = 20;
+    let valor = (preco*proc)/100;
+    let novo = preco - valor;
+    document.write(`O produto que custava R$${preco},00, na promoção com desconto de ${proc}%, vai custar R$${novo},00.`);
+</script>

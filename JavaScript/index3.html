@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+
+<html class="light" lang="pt-br"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Depoimentos de Alunos</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#137fec",
+              "background-light": "#f6f7f8",
+              "background-dark": "#101922",
+              "text-light": "#101922",
+              "text-dark": "#f6f7f8",
+              "text-secondary-light": "#475569",
+              "text-secondary-dark": "#94a3b8",
+            },
+            fontFamily: {
+              "display": ["Lexend", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-text-light dark:text-text-dark">
+<div class="relative flex min-h-screen w-full flex-col">
+<!-- Top App Bar -->
+<header class="sticky top-0 z-10 flex h-16 w-full items-center justify-between border-b border-slate-200/80 bg-background-light/80 px-4 backdrop-blur-sm dark:border-slate-800/80 dark:bg-background-dark/80">
+<button class="flex size-10 shrink-0 items-center justify-center rounded-full text-text-light dark:text-text-dark">
+<span class="material-symbols-outlined text-2xl">arrow_back</span>
+</button>
+<h1 class="flex-1 text-center text-lg font-bold">O que nossos alunos dizem</h1>
+<div class="size-10 shrink-0"></div>
+</header>
+<!-- Main Content -->
+<main class="flex-grow pb-28">
+<div class="flex flex-col gap-6 p-4 pt-6">
+<!-- Review Card 1 -->
+<div class="flex flex-col gap-4 rounded-xl bg-white p-5 shadow-sm dark:bg-slate-900/50">
+<div class="flex items-center gap-4">
+<img class="size-12 rounded-full object-cover" data-alt="Foto de Ana Silva, aluna satisfeita." src="https://lh3.googleusercontent.com/aida-public/AB6AXuChftlEey3y02pmY0vHVFI2iJmuAZfPsNkP01D47qCyq0hoshbI7gnh9OhYE7eMpiwVxWrz4_6S0Jvha4rb118ItE80xZq0cEFwX378VeR3GMKOgNHhmaWIEiwbamHz5-T_6f1jRl0caLjHM-bo8ZQNqZRzTr5hsuuZ7lN6np46NNlY21dwqZ5iBPuaLQbAtumiKdjAW80M-AW6I-II3m9gSV6K_DSpMzxDS_fT8tTmMvJa39QMXnQWXzYcNA9aVk2w1Pj835X1OnQ"/>
+<div class="flex-1">
+<p class="font-bold text-text-light dark:text-text-dark">Ana Silva</p>
+<p class="text-sm text-text-secondary-light dark:text-text-secondary-dark">Aluna de ISO 9001:2015</p>
+</div>
+</div>
+<div class="flex gap-1 text-amber-400">
+<span class="material-symbols-outlined text-lg">star</span>
+<span class="material-symbols-outlined text-lg">star</span>
+<span class="material-symbols-outlined text-lg">star</span>
+<span class="material-symbols-outlined text-lg">star</span>
+<span class="material-symbols-outlined text-lg">star</span>
+</div>
+<p class="text-text-secondary-light dark:text-text-secondary-dark">
+                        "A qualidade do conteúdo e o suporte do professor foram essenciais para minha certificação. A plataforma é excelente e muito intuitiva."
+                    </p>
+<div class="flex gap-6 text-text-secondary-light dark:text-text-secondary-dark">
+<button class="flex items-center gap-2 transition-colors hover:text-primary">
+<span class="material-symbols-outlined text-xl">thumb_up</span>
+<p class="text-sm">18</p>
+</button>
+<button class="flex items-center gap-2 transition-colors hover:text-red-500">
+<span class="material-symbols-outlined text-xl">thumb_down</span>
+</button>
+</div>
+</div>
+<!-- Review Card 2 -->
+<div class="flex flex-col gap-4 rounded-xl bg-white p-5 shadow-sm dark:bg-slate-900/50">
+<div class="flex items-center gap-4">
+<img class="size-12 rounded-full object-cover" data-alt="Foto de João Pereira, aluno satisfeito." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAHpYJE_MtWCqgnkt82fXO59VtDZf-LCUek7v796WmD2domiGYHO4KraCs7BrESiQK901FfQBcra4pI9KKTXAooBEoDEEewiAwt1_EhRvxUeJHYaOlVoH_KW33uhq8bQjJo55gkgQKGGive_cTqemQAHZ698TVnhlcjsCuY6Pgjg5vLH8DoOX6leju8aFs224UwS4joRU0keV4o9ovMJJ0bXS-mAfIUDZor_xVUaRtEpnlvA8OWyOLkLqDfrS-FIQgIpx_0DT_sbF8"/>
+<div class="flex-1">
+<p class="font-bold text-text-light dark:text-text-dark">João Pereira</p>
+<p class="text-sm text-text-secondary-light dark:text-text-secondary-dark">Aluno de Educação Especial Inclusiva</p>
+</div>
+</div>
+<div class="flex gap-1 text-amber-400">
+<span class="material-symbols-outlined text-lg">star</span>
+<span class="material-symbols-outlined text-lg">star</span>
+<span class="material-symbols-outlined text-lg">star</span>
+<span class="material-symbols-outlined text-lg">star</span>
+<span class="material-symbols-outlined text-lg">star</span>
+</div>
+<p class="text-text-secondary-light dark:text-text-secondary-dark">
+                        "O curso superou minhas expectativas. Aprendi técnicas práticas que já estou aplicando em sala de aula com resultados incríveis."
+                    </p>
+<div class="flex gap-6 text-text-secondary-light dark:text-text-secondary-dark">
+<button class="flex items-center gap-2 transition-colors hover:text-primary">
+<span class="material-symbols-outlined text-xl">thumb_up</span>
+<p class="text-sm">25</p>
+</button>
+<button class="flex items-center gap-2 transition-colors hover:text-red-500">
+<span class="material-symbols-outlined text-xl">thumb_down</span>
+<p class="text-sm">1</p>
+</button>
+</div>
+</div>
+<!-- Review Card 3 -->
+<div class="flex flex-col gap-4 rounded-xl bg-white p-5 shadow-sm dark:bg-slate-900/50">
+<div class="flex items-center gap-4">
+<img class="size-12 rounded-full object-cover" data-alt="Foto de Mariana Costa, aluna satisfeita." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDQqB9Yo2kR94wt393SxE-LzKbOVjlNg2w1PTy43EGASjSvisY8CtI5yHV9AzhgjzpzISsoAyvBztQP69WJRpPLj-cgETetfvMKpisQLzf0ANvzWZLlrUhxvIF95zJWiYCWhow9Ca594kv6ts_izO-4Oti81PRiPeko9q7r2OIznZDdBifIeujfwPbmt_q6fDOwyMK03Jdl_-o95fuQqsIQEc5OeITIZ51j23u-NoW5I7VEPNdSyuIB3XF5RDtwuZhwYrUDpWg8qpw"/>
+<div class="flex-1">
+<p class="font-bold text-text-light dark:text-text-dark">Mariana Costa</p>
+<p class="text-sm text-text-secondary-light dark:text-text-secondary-dark">Aluna de Gestão de Riscos ISO 31000</p>
+</div>
+</div>
+<div class="flex gap-1 text-amber-400">
+<span class="material-symbols-outlined text-lg">star</span>
+<span class="material-symbols-outlined text-lg">star</span>
+<span class="material-symbols-outlined text-lg">star</span>
+<span class="material-symbols-outlined text-lg">star</span>
+<span class="material-symbols-outlined text-lg">star</span>
+</div>
+<p class="text-text-secondary-light dark:text-text-secondary-dark">
+                        "A didática do curso transformou um tema complexo em algo totalmente compreensível. Recomendo a todos os profissionais da área."
+                    </p>
+<div class="flex gap-6 text-text-secondary-light dark:text-text-secondary-dark">
+<button class="flex items-center gap-2 transition-colors hover:text-primary">
+<span class="material-symbols-outlined text-xl">thumb_up</span>
+<p class="text-sm">12</p>
+</button>
+<button class="flex items-center gap-2 transition-colors hover:text-red-500">
+<span class="material-symbols-outlined text-xl">thumb_down</span>
+</button>
+</div>
+</div>
+</div>
+</main>
+<!-- Floating CTA Button -->
+<footer class="fixed bottom-0 left-0 w-full bg-background-light/70 p-4 backdrop-blur-sm dark:bg-background-dark/70">
+<button class="flex h-12 w-full cursor-pointer items-center justify-center overflow-hidden rounded-xl bg-primary text-base font-bold text-white shadow-lg shadow-primary/30 transition-transform active:scale-95">
+<span class="truncate">Veja nossos cursos</span>
+</button>
+</footer>
+</div>
+</body></html>

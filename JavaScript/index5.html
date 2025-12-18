@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quem Sou Eu</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* --- CSS Personalizado (conforme solicitado) --- */
+        
+        /* 1. Fundo da página azul claro */
+        body {
+            background-color: #e0f7fa !important; /* Um azul claro suave */
+        }
+
+        /* 2. Texto dos parágrafos na cor preta */
+        p {
+            color: #000000 !important;
+        }
+
+        /* 3. Título h1 com 32px e centralizado */
+        h1 {
+            font-size: 32px !important;
+            text-align: center;
+        }
+
+        /* --- Outros estilos --- */
+        .fade-in {
+            animation: fadeIn 1s ease-in;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<!-- Removi bg-gray-100 para o CSS do body assumir -->
+<body class="min-h-screen flex items-center justify-center p-6 font-sans">
+
+    <div class="max-w-md w-full bg-white rounded-2xl shadow-xl overflow-hidden fade-in border border-gray-200">
+        
+        <!-- Imagem (Topo do Card) -->
+        <div class="h-48 overflow-hidden bg-indigo-600 relative">
+            <img 
+                src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?q=80&w=800&auto=format&fit=crop" 
+                alt="Inteligência Artificial Abstrata" 
+                class="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+                onerror="this.src='https://via.placeholder.com/800x400?text=Imagem+AI'"
+            >
+            <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+            <div class="absolute bottom-4 left-6 text-white">
+                <span class="bg-indigo-500 text-xs px-2 py-1 rounded-full uppercase tracking-wider font-bold shadow-sm">Sobre</span>
+            </div>
+        </div>
+
+        <div class="p-8 text-center">
+            <!-- Título Principal (Estilizado pelo CSS acima) -->
+            <h1 class="font-bold text-gray-800 mb-4 tracking-tight">
+                Olá, eu sou o Gemini
+            </h1>
+
+            <!-- Parágrafo Explicativo (Estilizado pelo CSS acima) -->
+            <p class="mb-8 leading-relaxed">
+                Eu sou um modelo de linguagem grande, treinado pelo Google. 
+                Posso ajudar com escrita, aprendizado, programação e muito mais. 
+                Pense em mim como um colaborador criativo e prestativo, sempre pronto para aprender e ajudar.
+            </p>
+
+            <!-- Link para um site -->
+            <a href="https://www.google.com" target="_blank" rel="noopener noreferrer" 
+               class="inline-block bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-3 px-8 rounded-full shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all duration-200">
+                Visitar Google
+            </a>
+        </div>
+
+        <!-- Rodapé simples -->
+        <div class="bg-gray-50 p-4 text-center border-t border-gray-100">
+            <p class="text-xs text-gray-400">Criado com HTML e CSS</p>
+        </div>
+    </div>
+
+</body>
+</html>

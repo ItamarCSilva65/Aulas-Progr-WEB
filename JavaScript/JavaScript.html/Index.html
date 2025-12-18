@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introdução à JS</title>
+    <style>
+        button {
+            color: rgb(228, 215, 217);
+            background-color: rgb(80, 95, 235);
+            padding: 20px;
+            border-radius: 50px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Interagindo com um botão</h1>
+    <button onclick="clicou()">Clique aqui</button>
+
+
+    <script>
+        function clicou() {
+             window.alert('Você clicou no botão!');
+             let nome = window.prompt('Digite seu nome:');
+             window.alert(`Olá, ${nome}!`);
+             window.alert('Olá, ${nome}!'); /* forma errada */
+             window.alert('Olá, ' + nome);
+            
+        }            
+    </script>
+
+    <h1>Interagindo com mais um botão</h1>
+    <button onclick="exibirMensagemBoasVindas()">Bem-vindo(a)!</button>
+    <script>
+        function exibirMensagemBoasVindas() {
+             window.alert('Você clicou no botão! Olá de novo!');
+             let nome = window.prompt('Digite seu nome:');
+             window.alert(`Olá, ${nome}!`);
+             window.alert('Olá, ${nome}!'); /* forma errada */
+             window.alert('Olá, ' + nome);            
+        }
+                    
+    </script>
+
+
+    <h1>Interagindo com o terceiro botão</h1>
+    <button onclick="PerguntarNome()">Qual seu nome?</button>
+    <script>
+        function PerguntarNome() {
+              window.alert('Você clicou no botão! Olá de novo!');
+              let nomeDoUsuario = window.prompt('Por favor, digite seu nome:');
+              window.alert(`Olá, ${nomeDoUsuario}! É um prazer te conhecer através desta página!`);
+              window.alert('Olá, ${nome}!'); /* forma errada */
+              window.alert('Olá, ' + nome);            
+        }            
+    </script>
+
+
+
+
+
+
+
+</body>
+</html>
